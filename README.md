@@ -61,7 +61,7 @@ Bioinformatics | Genome Assembly | Illumina Sequencing | SPAdes | QUAST | NGS Pi
 I’m a biotechnology student exploring bioinformatics pipelines for genomics research. Open to collaboration and feedback!
 
 # License
-The project is licensed under the MIT license.
+The project is licensed under the MIT license (https://github.com/genome-miner/mycoplasma-assembly-pipeline/blob/main/LICENSE).
 
 # Note
 This project is for educational purposes. Data and reference information are obtained from NCBI SRA/GenBank and assembled using open-source tools.
