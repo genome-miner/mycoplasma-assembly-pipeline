@@ -2,14 +2,14 @@
 This repository contains a 𝐰𝐡𝐨𝐥𝐞 𝐠𝐞𝐧𝐨𝐦𝐞 𝐚𝐬𝐬𝐞𝐦𝐛𝐥𝐲 𝐩𝐢𝐩𝐞𝐥𝐢𝐧𝐞 implemented on Linux for analyzing 𝘔𝘺𝘤𝘰𝘱𝘭𝘢𝘴𝘮𝘢 𝘱𝘯𝘦𝘶𝘮𝘰𝘯𝘪𝘢𝘦 sequencing data using Illumina MiSeq reads.
 
 # Project overview
-**Objective:** Assemble and evaluate the whole genome of Mycoplasma pneumoniae from Illumina paired-end reads.
-**Organism:** Mycoplasmoides pneumoniae (strain FH_USA_MA_2009)
-**Study info:** Mycoplasma pneumoniae Whole Genome Sequencing and Assembly – PRJNA328823 (SRP078575)
-**Sample ID:** SAMN05391692 (SRS1565347)
-**Sequencing platform:** Illumina MiSeq
-**Library type:** Long-insert shotgun, paired-end
-**Input data:** SRA Run SRR3924617 (1.36M spots, ~393 Mb bases, 183 Mb download size)
-**Output:** Genome assembly (FASTA) and assembly quality report (QUAST).
+1. **Objective:** Assemble and evaluate the whole genome of Mycoplasma pneumoniae from Illumina paired-end reads.
+2. **Organism:** Mycoplasmoides pneumoniae (strain FH_USA_MA_2009)
+3. **Study info:** Mycoplasma pneumoniae Whole Genome Sequencing and Assembly – PRJNA328823 (SRP078575)
+4. **Sample ID:** SAMN05391692 (SRS1565347)
+5. **Sequencing platform:** Illumina MiSeq
+6. **Library type:** Long-insert shotgun, paired-end
+7. **Input data:** SRA Run SRR3924617 (1.36M spots, ~393 Mb bases, 183 Mb download size)
+8. **Output:** Genome assembly (FASTA) and assembly quality report (QUAST).
 
 # Tools used:
 1. SRA Toolkit (fasterq-dump): Convert .sra to FASTQ format
@@ -20,13 +20,13 @@ This repository contains a 𝐰𝐡𝐨𝐥𝐞 𝐠𝐞𝐧𝐨𝐦𝐞 𝐚�
 6. Bash: Shell scripting automation
 
 # Genome assembly workflow:
-Data/         # Raw sequencing data (.sra, FASTQ)  
-Quality/      # FastQC results
-Trimmed/      # fastp results
-Assembly/     # SPAdes output (contigs, scaffolds, log files)  
-QUAST/        # QUAST report and assembly statistics  
-Script/       # Pipeline script for automation  
-Documents/    # Flowchart  
+● Data/         # Raw sequencing data (.sra, FASTQ)  
+● Quality/      # FastQC results
+● Trimmed/      # fastp results
+● Assembly/     # SPAdes output (contigs, scaffolds, log files)  
+● QUAST/        # QUAST report and assembly statistics  
+● Script/       # Pipeline script for automation  
+● Documents/    # Flowchart  
 
 # Pipeline steps (Summary):
 1. Download sequencing data (SRA)                                  
@@ -40,16 +40,19 @@ Documents/    # Flowchart
 # Results summary
 Assembly statistics (QUAST report, contigs ≥500 bp):
 **Metric value:**
-Contigs (≥500 bp):	14
-Contigs (total):	15
-Largest contig:	324,076 bp
-Total length:	799,172 bp
-GC content: 39.78%
-N50:	92,062 bp
-N75:	62,710 bp
-L50:	2
-L75:	5
-N’s per 100 kbp:	0.00
+1. Contigs (≥500 bp):	14
+2. Contigs (total):	15
+3. Largest contig:	324,076 bp
+4. Total length:	799,172 bp
+5. GC content: 39.78%
+6. N50:	92,062 bp
+7. N75:	62,710 bp
+8. L50:	2
+9. L75:	5
+10. N’s per 100 kbp:	0.00
+
+# Images and flowchart:
+Key images and flowchart of this pipeline are available in the Document folder. 
 
 # Key concepts
 Bioinformatics | Genome Assembly | Illumina Sequencing | SPAdes | QUAST | NGS Pipelines | Shell Scripting | Data Analysis
