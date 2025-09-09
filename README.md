@@ -20,13 +20,13 @@ This repository contains a 𝐰𝐡𝐨𝐥𝐞 𝐠𝐞𝐧𝐨𝐦𝐞 𝐚�
 6. Bash: Shell scripting automation
 
 # Genome assembly workflow:
-● Data/         # Raw sequencing data (.sra, FASTQ)
-● Quality/      # FastQC results
-● Trimmed/      # fastp results
-● Assembly/     # SPAdes output (contigs, scaffolds, log files)
-● QUAST/        # QUAST report and assembly statistics
-● Script/       # Pipeline script for automation
-● Documents/    # Flowchart  
+1. Data/         # Raw sequencing data (.sra, FASTQ)
+2. Quality/      # FastQC results
+3. Trimmed/      # fastp results
+4. Assembly/     # SPAdes output (contigs, scaffolds, log files)
+5. QUAST/        # QUAST report and assembly statistics
+6. Script/       # Pipeline script for automation
+7. Documents/    # Flowchart  
 
 # Pipeline steps (Summary):
 1. Download sequencing data (SRA)                                  
