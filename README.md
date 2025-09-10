@@ -79,6 +79,17 @@ mycoplasma-assembly-pipeline/
 
 ## Before & After Filtering Results:
 
+<p align="center">
+  <img src="https://github.com/genome-miner/mycoplasma-assembly-pipeline/blob/main/Documents/Before%20filtering.png?raw=true" alt="Alt text" width="600">
+</p>
+
+---
+
+<p align="center">
+  <img src="https://github.com/genome-miner/mycoplasma-assembly-pipeline/blob/main/Documents/After%20filtering.png?raw=true" alt="Alt text" width="600">
+</p>
+
+---
 
 ## Results Summary
 Assembly statistics (QUAST report, contigs ≥500 bp):
