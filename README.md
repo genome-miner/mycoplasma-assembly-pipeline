@@ -70,6 +70,10 @@ mycoplasma-assembly-pipeline/
 └── Script/          # Command pipeline 
 ```
 
+<p align="center">
+  <img src="https://github.com/genome-miner/mycoplasma-assembly-pipeline/blob/main/Documents/Flowchart.png?raw=true" alt="Alt text" width="150">
+</p>
+
 ---
 
 ## Results Summary
