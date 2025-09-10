@@ -56,7 +56,7 @@ This project demonstrates a complete whole genome assembly workflow for **_Mycop
 **Bash**: Pipeline automation
 
 ---
-## Project Overview
+## Project Structure
 ```bash
 mycoplasma-assembly-pipeline/
 │
