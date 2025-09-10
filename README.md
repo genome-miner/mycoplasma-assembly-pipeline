@@ -10,6 +10,7 @@ This repository contains a 𝐰𝐡𝐨𝐥𝐞 𝐠𝐞𝐧𝐨𝐦𝐞 𝐚�
   <li><a href="#tools--technologies">Tools & Technologies</a></li>
   <li><a href="#project-structure">Project Structure</a></li>
   <li><a href="#pipeline-workflow">Pipeline Workflow</a></li>
+  <li><a href="#before--after-filtering-results">Before & After Filtering Results</a></li>
   <li><a href="#results-summary">Results Summary</a></li>
   <li><a href="#bandage-graph-visualization">Bandage Graph Visualization</a></li>
   <li><a href="#key-concepts">Key Concepts</a></li>
@@ -75,6 +76,9 @@ mycoplasma-assembly-pipeline/
 </p>
 
 ---
+
+## Before & After Filtering Results:
+
 
 ## Results Summary
 Assembly statistics (QUAST report, contigs ≥500 bp):
