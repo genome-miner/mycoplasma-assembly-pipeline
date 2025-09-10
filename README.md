@@ -129,9 +129,6 @@ While this pipeline successfully assembles and evaluates the Mycoplasma pneumoni
 
 ---
 
-## License
-This project is licensed under the [MIT License]().
-
 ## Author & Contact
 Sana Aziz Sial
 Biotechnologist and Bioinformatician
@@ -139,3 +136,8 @@ Biotechnologist and Bioinformatician
 🔗 [LinkedIn]()
 
 _Open to collaboration and feedback!_
+
+---
+
+## License
+This project is licensed under the [MIT License]().
