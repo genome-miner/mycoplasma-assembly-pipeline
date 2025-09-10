@@ -1,67 +1,141 @@
-# Mycoplasma-assembly-pipeline
-This repository contains a 𝐰𝐡𝐨𝐥𝐞 𝐠𝐞𝐧𝐨𝐦𝐞 𝐚𝐬𝐬𝐞𝐦𝐛𝐥𝐲 𝐩𝐢𝐩𝐞𝐥𝐢𝐧𝐞 implemented on Linux for analyzing 𝘔𝘺𝘤𝘰𝘱𝘭𝘢𝘴𝘮𝘢 𝘱𝘯𝘦𝘶𝘮𝘰𝘯𝘪𝘢𝘦 sequencing data using Illumina MiSeq reads.
+# 🧬 Mycoplasma-assembly-pipeline
+This repository contains a 𝐰𝐡𝐨𝐥𝐞 𝐠𝐞𝐧𝐨𝐦𝐞 𝐚𝐬𝐬𝐞𝐦𝐛𝐥𝐲 𝐩𝐢𝐩𝐞𝐥𝐢𝐧𝐞 implemented on Linux for analyzing **𝘔𝘺𝘤𝘰𝘱𝘭𝘢𝘴𝘮𝘢 𝘱𝘯𝘦𝘶𝘮𝘰𝘯𝘪𝘢𝘦** sequencing data using Illumina MiSeq reads.
 
-# Project overview
-1. **Objective:** Assemble and evaluate the whole genome of Mycoplasma pneumoniae from Illumina paired-end reads.
-2. **Organism:** Mycoplasmoides pneumoniae (strain FH_USA_MA_2009)
-3. **Study info:** Mycoplasma pneumoniae Whole Genome Sequencing and Assembly – PRJNA328823 (SRP078575)
-4. **Sample ID:** SAMN05391692 (SRS1565347)
-5. **Sequencing platform:** Illumina MiSeq
-6. **Library type:** Long-insert shotgun, paired-end
-7. **Input data:** SRA Run SRR3924617 (1.36M spots, ~393 Mb bases, 183 Mb download size)
-8. **Output:** Genome assembly (FASTA) and assembly quality report (QUAST).
+---
 
-# Tools used:
-1. SRA Toolkit (fasterq-dump): Convert .sra to FASTQ format
-2. FastQC: Quality check of raw reads
-3. Fastp: Adapter trimming & quality filtering
-4. SPAdes: Genome assembly
-5. QUAST: Assembly evaluation and quality assessment
-6. Bash: Shell scripting automation
+## Table of contents
+<ul>
+  <li><a href="#overview">Overview</a></li>
+  <li><a href="#dataset">Dataset</a></li>
+  <li><a href="#tools--technologies">Tools & Technologies</a></li>
+  <li><a href="#project-structure">Project Structure</a></li>
+  <li><a href="#pipeline-workflow">Pipeline Workflow</a></li>
+  <li><a href="#results-summary">Results Summary</a></li>
+  <li><a href="#bandage-graph-visualization">Bandage Graph Visualization</a></li>
+  <li><a href="#key-concepts">Key Concepts</a></li>
+  <li><a href="#how-to-run-this-project">How to Run This Project</a></li>
+  <li><a href="#future-work">Future Work</a></li>
+  <li><a href="#author--contact">Author & Contact</a></li>
+  <li><a href="#license">License</a></li>
+</ul>
 
-# Genome assembly workflow:
-1. Data/         # Raw sequencing data (.sra, FASTQ)
-2. Quality/      # FastQC results
-3. Trimmed/      # fastp results
-4. Assembly/     # SPAdes output (contigs, scaffolds, log files)
-5. QUAST/        # QUAST report and assembly statistics
-6. Script/       # Pipeline script for automation
-7. Documents/    # Flowchart  
+---
+## Overview
+This project demonstrates a complete whole genome assembly workflow for **_Mycoplasma pneumoniae_**, starting from raw Illumina sequencing data to final assembly evaluation. The pipeline integrates standard open-source bioinformatics tools to ensure high-quality assemblies and reproducible results.
 
-# Pipeline steps (Summary):
-1. Download sequencing data (SRA)                                  
-2. Convert SRA to FASTQ (fasterq-dump)
-3. Perform quality check (FastQC)
-4. Trim adapters & filter low-quality reads (Fastp)
-5. Assemble genome (SPAdes)
-6. Evaluate assembly statistics (QUAST)
-7. Summarize results
+---
 
-# Results summary
+## Dataset
+
+**Organism:** Mycoplasmoides pneumoniae (strain FH_USA_MA_2009)
+
+**Sequencing platform:** Illumina MiSeq
+
+**Library type:** Long-insert shotgun, paired-end
+
+**Input Data:** SRR3924617 (~1.36M spots, ~393 Mb bases, 183 Mb download size)
+
+**Output:** Genome assembly (FASTA), visualization (Bandage), and quality reports (QUAST)
+
+---
+
+## Tools & Technologies
+
+**SRA Toolkit**: Convert .sra to FASTQ
+
+**FastQC**: Raw read quality check
+
+**Fastp**: Adapter trimming & quality filtering
+
+**SPAdes**: Genome assembly
+
+**QUAST**: Assembly quality evaluation
+
+**Bandage**: Assembly graph visualization
+
+**Bash**: Pipeline automation
+
+---
+## Project Overview
+```bash
+mycoplasma-assembly-pipeline/
+│
+├── Data/            # Raw sequencing data (.sra, FASTQ)
+├── Quality/         # FastQC results
+├── Trimmed/         # fastp results
+├── Assembly/        # SPAdes output (contigs, scaffolds, log files)
+├── QUAST/           # QUAST report and assembly statistics
+├── Bandage/         # Bandage graph visualization (assembly graph)
+├── Documents/       # Flowchart & figures
+└── Script/          # Command pipeline 
+```
+
+---
+
+## Results Summary
 Assembly statistics (QUAST report, contigs ≥500 bp):
-**Metric value:**
-1. Contigs (≥500 bp):	14
-2. Contigs (total):	15
-3. Largest contig:	324,076 bp
-4. Total length:	799,172 bp
-5. GC content: 39.78%
-6. N50:	92,062 bp
-7. N75:	62,710 bp
-8. L50:	2
-9. L75:	5
-10. N’s per 100 kbp:	0.00
 
-# Images and flowchart:
-Key images and flowchart of this pipeline are available in the Document folder. 
+| Metric            | Value      |
+| ----------------- | ---------- |
+| Contigs (≥500 bp) | 14         |
+| Contigs (total)   | 15         |
+| Largest contig    | 324,076 bp |
+| Total length      | 799,172 bp |
+| GC content        | 39.78%     |
+| N50               | 92,062 bp  |
+| N75               | 62,710 bp  |
+| L50               | 2          |
+| L75               | 5          |
+| N’s per 100 kbp   | 0.00       |
 
-# Key concepts
-Bioinformatics | Genome Assembly | Illumina Sequencing | SPAdes | QUAST | NGS Pipelines | Shell Scripting | Data Analysis
+---
 
-# Contact
-I’m a biotechnology student exploring bioinformatics pipelines for genomics research. Open to collaboration and feedback!
+## Bandage Graph Visualization
+The assembly graph (after simplification) generated by SPAdes was visualized using Bandage:
+**Nodes:** 551
+**Edges:** 684
+**Total graph length:** 857,023 bp
+This graph provides a visual representation of genome assembly connectivity, identifying possible repeats, unresolved regions, and structural complexities.
 
-# License
-The project is licensed under the MIT license (https://github.com/genome-miner/mycoplasma-assembly-pipeline/blob/main/LICENSE).
+---
 
-# Note
-This project is for educational purposes. Data and reference information are obtained from NCBI SRA/GenBank and assembled using open-source tools.
+## Key Concepts
+1. Genome Assembly
+2. Illumina Sequencing
+3. SPAdes & QUAST Analysis
+4. Assembly Graph Interpretation
+5. Bioinformatics Pipeline Automation
+
+## How to Run This Project
+**Clone this repository:**
+```bash
+git clone https://github.com/genome-miner/mycoplasma-assembly-pipeline.git
+cd mycoplasma-assembly-pipeline
+```
+Download sequencing data using the SRA Toolkit.
+
+Run pipeline scripts inside the [Script]() folder.
+
+Explore outputs in [Assembly](), [QUAST](), and [Bandage]().
+
+---
+
+## Future Work
+While this pipeline successfully assembles and evaluates the Mycoplasma pneumoniae genome, several improvements and extensions are possible:
+1. Genome annotation: Predict genes, proteins, and functional elements using tools such as Prokka.
+2. Comparative genomics: Align assembled genome to reference strains to identify mutations, insertions, or deletions.
+3. Phylogenomic analysis: Place assembled genome in evolutionary context with related species.
+4. Extension to other organisms: Adapt the pipeline for bacterial or viral genome assembly beyond Mycoplasma.
+
+---
+
+## License
+This project is licensed under the [MIT License]().
+
+## Author & Contact
+Sana Aziz Sial
+Biotechnologist and Bioinformatician
+📧 Email:
+🔗 [LinkedIn]()
+
+_Open to collaboration and feedback!_
