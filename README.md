@@ -130,17 +130,14 @@ While this pipeline successfully assembles and evaluates the Mycoplasma pneumoni
 ---
 
 ## Author & Contact
-Sana Aziz Sial
+Sana Aziz Sial  
+Biotechnologist and Bioinformatician  
+📧 Email: biotechnologist09pharma@gmail.com  
+🔗 [LinkedIn](in/sana-aziz-sial-73b189265)  
 
-Biotechnologist and Bioinformatician
-
-📧 Email: biotechnologist09pharma@gmail.com
-
-🔗 [LinkedIn](in/sana-aziz-sial-73b189265)
-
-_Open to collaboration and feedback!_
+_Open to collaboration and feedback!_  
 
 ---
 
 ## License
-This project is licensed under the [MIT License]().
+This project is licensed under the [MIT License](https://github.com/genome-miner/mycoplasma-assembly-pipeline/blob/main/LICENSE).
