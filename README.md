@@ -114,9 +114,9 @@ cd mycoplasma-assembly-pipeline
 ```
 Download sequencing data using the SRA Toolkit.
 
-Run pipeline scripts inside the [Script]() folder.
+Run pipeline scripts inside the [Script](https://github.com/genome-miner/mycoplasma-assembly-pipeline/tree/main/Script) folder.
 
-Explore outputs in [Assembly](), [QUAST](), and [Bandage]().
+Explore outputs in [Assembly](https://github.com/genome-miner/mycoplasma-assembly-pipeline/tree/main/Assembly), [QUAST](https://github.com/genome-miner/mycoplasma-assembly-pipeline/tree/main/Quast), and [Bandage](https://github.com/genome-miner/mycoplasma-assembly-pipeline/tree/main/Bandage).
 
 ---
 
@@ -131,9 +131,12 @@ While this pipeline successfully assembles and evaluates the Mycoplasma pneumoni
 
 ## Author & Contact
 Sana Aziz Sial
+
 Biotechnologist and Bioinformatician
-📧 Email:
-🔗 [LinkedIn]()
+
+📧 Email: biotechnologist09pharma@gmail.com
+
+🔗 [LinkedIn](in/sana-aziz-sial-73b189265)
 
 _Open to collaboration and feedback!_
 
