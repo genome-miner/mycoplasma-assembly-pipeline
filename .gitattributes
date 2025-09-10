@@ -2,3 +2,4 @@ Data filter=lfs diff=lfs merge=lfs -text
 *.fastq filter=lfs diff=lfs merge=lfs -text
 Data/SRR3924617 filter=lfs diff=lfs merge=lfs -text
 Trimmed/* filter=lfs diff=lfs merge=lfs -text
+Assembly/** filter=lfs diff=lfs merge=lfs -text
