@@ -166,7 +166,7 @@ While this pipeline successfully assembles and evaluates the Mycoplasma pneumoni
 ## Author & Contact
 Sana Aziz Sial  
 Biotechnologist and Bioinformatician  
-📧 Email: biotechnologist09pharma@gmail.com  
+📧 [Email](sanaazizsial@gmail.com)  
 🔗 [LinkedIn](in/sana-aziz-sial-73b189265)  
 
 _Open to collaboration and feedback!_  
