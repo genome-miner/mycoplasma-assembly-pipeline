@@ -263,7 +263,7 @@ cd Script
 <p>The complete workflow follows a sequence of read preparation, genome assembly, and quality assessment steps.</p>
 
 <p align="center">
-  <img src="https://github.com/genome-miner/mycoplasma-assembly-pipeline/blob/main/Documents/Flowchart.png?raw=true" alt="Mycoplasma pneumoniae genome assembly workflow" width="400"/>
+  <img src="https://github.com/genome-miner/mycoplasma-assembly-pipeline/blob/main/Documents/Flowchart.png?raw=true" alt="Alt text" width="150">
 </p>
 
 ---
@@ -296,7 +296,7 @@ cd Script
 <h3>After Filtering</h3>
 
 <p align="center">
-  <img src="https://github.com/genome-miner/mycoplasma-assembly-pipeline/blob/main/Documents/Flowchart.png?raw=true" alt="Alt text" width="150">
+  <img src="https://github.com/genome-miner/mycoplasma-assembly-pipeline/blob/main/Documents/After%20filtering.png?raw=true" alt="Alt text" width="600">
 </p>
 
 ---
